@@ -1,0 +1,96 @@
+:root {
+  --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte2: Monotype Corsiva;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+} 
+html, body {
+  min-height: 100hv;
+  background-color: rgba(202, 202, 202, 0.959);
+  font-family: var(--fonte1);
+}
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+header > h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-family: var(--fonte1);
+  font-size: 5vw;
+
+}
+
+header > p {
+  padding-bottom:50px ;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+header a:hover, footer a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 30px;
+  font-family: var(--fonte2);
+  font-size: 1.6em;
+}
+
+section > p {
+  padding-bottom: 2em;
+}
+
+section.normal{
+  color: black;
+  background-color: white;
+}
+
+section.imagem {
+  color: white;
+  background-color: rgb(82, 82, 82);
+  background-attachment: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.534) ;
+}
+
+section.imagem > p {
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(53, 50, 50, 0.233);
+  text-shadow: 1px 1px 1px 1px 5px black;
+}
+
+section#img01 {
+  background-image: url(imagem/passaro.jpeg);
+  background-size: 100% 100%;
+  background-position: right right;
+
+}
+
+section#img02 {
+  background-image: url(imagem/carta.jpg);
+  background-size : 100% 100%;
+  background-position: center right;
+
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
